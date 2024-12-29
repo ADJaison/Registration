@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 100px; 
+    height: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .container {
+        background-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+        color: #e0e0e0;
+    }
+
+    label {
+        color: #ccc;
+    }
+
+    input, select, textarea {
+        background-color: #444;
+        color: #e0e0e0;
+        border: 1px solid #666;
+    }
+
+    input[type="text"]:focus, select:focus, textarea:focus {
+        border-color: #4CAF50;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    #error-message {
+        color: red;
+    }
+}
