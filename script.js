@@ -41,7 +41,12 @@ function validateForm() {
     .then(response => response.json())
     .then(data => {
         console.log("Успех:", data);
-        alert("Регистрация прошла успешно!");
+
+        if (window.Telegram.WebApp) {
+            window.Telegram.WebApp.close();
+        }
+
+        window.Telegram.WebApp.sendData(JSON.stringify(formData));  
     })
     .catch(error => {
         console.error("Ошибка:", error);
